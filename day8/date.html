@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DateTime</title>
+</head>
+<body>
+	<p id="demo"></p>
+
+	<script type="text/javascript">
+		var d = new Date("2020-02");
+//		ISO -> 2020-02-25
+// 		Short date -> 03/02/2019
+//		Londg Date -> Feb 01 2020
+
+/*
+	getFullYear() -> ili teyin edir (2020)
+	getMonth()	  -> ayi teyin edir (0-11)
+	getDate()	  -> gunu teyin edir(1-31)
+	getHours()    -> saati teyin edir(0-23)
+	getMinutes()  -> deqiqeni teyin edir(0-59)
+	getSeconds()  -> saniyeni teyin edir(0-59)
+	getMilliseconds()-> millisaniyeni teyin edir(0-999)
+	getTime()      -> indiki zamani teyin edir , millisaniyeler kimi ekrana verir
+	getDay() 	   -> heftenin gunlerini teyin edir. (0-6)
+
+*/
+		document.getElementById('demo').innerHTML =d;
+	</script>
+</body>
+</html>

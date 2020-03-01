@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cookies</title>
+	<script type="text/javascript">
+		function setCookie(cname, cvalue, exday)
+		{
+			var d = new Date();
+			d.setTime(d.getTime()+(exday*24*60*60*1000));
+			var expires = "expires="+ d.toGMTString();
+			document.cookie = cname+"="+cvalue+";"+expires+";path=/";
+		}
+		// function getName() {
+		// 	var name = prompt('Adiniz');
+		// 	return name;
+		// }
+		// var value = getName();
+		// setCookie('username',value,2);
+		document.cookie = '';
+		if(document.cookie == '')
+			alert('Yoxdur');
+		else
+			alert('Cookie Var');
+	</script>
+</head>
+<body>
+	<h1>Cookies</h1>
+</body>
+</html>
